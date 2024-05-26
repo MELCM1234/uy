@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('66.avif'); /* Imagen de fondo */
+  background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat; /* No repetir la imagen */
+  background-attachment: fixed; /* Fijar la imagen de fondo para que no se mueva al hacer scroll */
+  color: #f1f1f1; /* Cambiar el color del texto a blanco para que se vea mejor */
+}
+
+h1{
+  font-family: "Lugrasimo", cursive;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+}
+
+.logo img {
+  height: 45px;
+}
+
+.menu-btn {
+  background-color: rgba(255, 69, 0, 0.8); /* Naranja Rojo con opacidad */
+  color: #361a1a;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el contenido */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 300px;
+  width: 100%;
+  padding: 2em;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente para el formulario */
+  color: #141313; /* Color del texto más oscuro para mejor legibilidad */
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+
+
+button {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #2a226d; /* Verde lima */
+  color: #7d7f92;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .menu {
+      display: none;
+      flex-direction: column;
+  }
+
+  .menu-btn {
+      display: block;
+  }
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+
+
